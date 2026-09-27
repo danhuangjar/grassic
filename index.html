@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>welcome to Grassic</title>   
-        <style> 
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                background: #D6E9C3;
-            }    
-            .top-fade {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 30px;
-                background: linear-gradient(to bottom, #FFFFFF, #D6E9C3);
-            }
-            .logo {
-                position: absolute;
-                top: 20px;
-                left: 20px;
-                height: 24px;
-                width: auto;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="top-fade"></div>
-        <img src="logo.png" alt="Grassic" class="logo">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to Grassic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #D6E9C3;
+        }
+
+        .top-fade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to bottom, #FFFFFF, #D6E9C3);
+        }
+
+        .logo {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            height: 18px;
+            width: auto;
+        }
+
+        .hello {
+            position: absolute;
+            top: 30px;
+            left: 12px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            width: 18px;
+            height: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .menu span {
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            background: #088D5E;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-fade"></div>
+    <svg class="logo" viewBox="0 0 100 24" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="18" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#088D5E">grassic</text>
+    </svg>
+    <p class="hello">hello</p>
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
 </html>
